@@ -1,0 +1,42 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>LSPDFR Plugin Template</Name>
+    <Description>A project template for creating LSPDFR plugins for GTA V using RagePluginHook and RAGENativeUI.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MyLSPDFRPlugin</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+	<LanguageTag>csharp</LanguageTag>
+	<PlatformTag>windows</PlatformTag>
+	<ProjectTypeTag>library</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="LSPDFR-Plugin-Template.csproj" ReplaceParameters="true">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConsoleCommands.cs">ConsoleCommands.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EntryPoint.cs">EntryPoint.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+        <Folder Name="Properties" TargetFolderName="Properties">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.cs">Settings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TemplateSettings.ini">TemplateSettings.ini</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Directory.Build.props.template">Directory.Build.props.template</ProjectItem>
+    </Project>
+  </TemplateContent>
+	<WizardExtension>
+		<Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+		<FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+	</WizardExtension>
+	<WizardData>
+		<packages>
+			<package id="RagePluginHook" version="1.109.1" />
+			<package id="RAGENativeUI" version="1.9.3" />
+		</packages>
+	</WizardData>
+</VSTemplate>

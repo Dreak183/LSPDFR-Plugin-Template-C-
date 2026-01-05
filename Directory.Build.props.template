@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SETUP INSTRUCTIONS:
+  1. Rename this file to "Directory.Build.props" (remove .template)
+  2. Set your GTA V installation path below
+  3. Optionally add this file to .gitignore so each developer can have their own path
+-->
+<Project>
+  <PropertyGroup>
+    <!-- Set this to your GTA V installation folder -->
+    <GtaVPath>C:\Program Files\Rockstar Games\Grand Theft Auto V</GtaVPath>
+  </PropertyGroup>
+</Project>
